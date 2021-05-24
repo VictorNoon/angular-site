@@ -16,7 +16,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 
 //External Modules PrimeNG
-import {TimelineModule} from 'primeng/timeline';
+
 
 //Personnal Modules
 import { AppComponent } from './app.component';
@@ -41,6 +41,7 @@ import { CodeFourOEighteenViewComponent } from './code-four-o-eighteen-view/code
 import { FooterComponent } from './footer/footer.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SideBarLinkCardComponent } from './side-bar-link-card/side-bar-link-card.component';
+import { TimeLineComponent } from './time-line/time-line.component';
 
 const appRoutes : Routes = [
   { path: 'cv', component: CvViewComponent},
@@ -71,6 +72,7 @@ const appRoutes : Routes = [
     FooterComponent,
     SideBarComponent,
     SideBarLinkCardComponent,
+    TimeLineComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,7 +85,6 @@ const appRoutes : Routes = [
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
-    TimelineModule
   ],
   providers: [
     LanguageService,

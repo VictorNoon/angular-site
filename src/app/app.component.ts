@@ -54,10 +54,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.openSnackBar();
+    /*this.openSnackBar();
     if (window.innerWidth <= this.minWidthForMobile) { // 768px portrait
       this.mobile = true;
-    }
+    }*/
   }
 
   onChangeLanguage() {

@@ -1,0 +1,86 @@
+@import "../../assets/color_scheme.scss";
+@import "../../assets/ReneBiederMiliard/style.css";
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    .line {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        padding-bottom: 60px;
+        width: 3px;
+        background-color: $secondary-color-dark;
+        border-radius: 2px;
+        mat-card-title {
+            color: $secondary-color;
+        }
+
+        .dot-left {
+            margin-top: 75px;
+            width: 50px;
+            height: 50px;
+            border-radius: 40px;
+            overflow: visible;
+            background-color: $secondary-color-light;
+            color: $dark-font;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: right;
+            p {
+                text-align:left;
+                margin-right: 7px;
+            }
+        }
+        .card {
+            color: $light-font;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: $primary-color;
+            overflow: visible;
+            @media screen {
+                min-width: 35vw;
+              }
+              @media screen and (max-width: 1500px) {
+                min-width: 30vw;
+              }
+              @media screen and (max-width: 1000px) {
+                min-width: 25vw;
+              }  
+              @media screen and (max-width: 800px) {
+                min-width: 35vw;
+              }
+              @media screen and (max-width: 700px) {
+                min-width: 30vw;
+                max-height: 20px;
+                overflow: hidden;
+              }   
+        }
+
+        .dot-right {
+            margin-top: 75px;
+            width: 50px;
+            height: 50px;
+            border-radius: 40px;
+            overflow: visible;
+            background-color: $secondary-color-light;
+            color: $dark-font;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            p {
+                text-align:left;
+                margin-left: 7px;
+            }
+
+
+        }
+    }
+}
