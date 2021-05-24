@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="mail-to">
+    <h3>{{getMailFormTitle()}}</h3>
+    <form
+      class="mail-form"
+      (ngSubmit)="onSubmit(mailForm)" #mailForm="ngForm"
+    >
+      <div class="form-fields-layout">
+        <div class="contact-info">
+          <input
+            type="text"
+            size="12"
+            maxlength="50"
+            name="name"
+            placeholder="Nom"
+            ngModel
+            required
+          />
+          <input
+            type="text"
+            size="12"
+            maxlength="50"
+            name="e-mail"
+            placeholder="E-mail"
+            ngModel
+            required
+          />
+          <input
+            type="text"
+            size="12"
+            maxlength="50"
+            name="phone"
+            placeholder="Téléphone"
+            ngModel
+          />
+          <input
+            type="text"
+            size="12"
+            maxlength="50"
+            name="topic"
+            placeholder="Objet"
+            ngModel
+            required
+          />
+        </div>
+        <div class="mail-text">
+          <textarea name="mail-text" ngModel></textarea>
+        </div>
+      </div>
+      <div class="submit-btn">
+        <div matRipple
+             matRippleColor="#7040ff90">
+          <input type="submit" text="Envoyer" action="Send" [disabled]="mailForm.invalid" />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

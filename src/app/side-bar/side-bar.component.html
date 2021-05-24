@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="navigation">
+        <h2 class="main-title">Victor Noon</h2>
+        <ul class="nav-links">
+            <app-side-bar-link-card *ngFor="let card of cards" [card]="card"></app-side-bar-link-card>
+            <!-- <li *ngFor="let card of cards"
+            [class]="card.cardStyle"><a [routerLink]="card.cardLink" (click)="onChangePage()">{{card.cardText}}</a><li> -->
+        </ul>
+
+    </div>
+
+    <div class="footer-display">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/victor-noon-550883105/" target="_blank" rel="noopener noreferrer"><img class="icon" src="../../assets/images/svg/linkedInImg-no-borders.svg"></a>
+            <a href="https://github.com/search?q=victornoon&type=repositories" target="_blank" rel="noopener noreferrer"><img class="icon" src="../../assets/images/png/GitHub-Mark-Light-64px.png"></a>
+        </div>
+        <button class="language-btn"
+        (click)="onChangeLanguage()"
+        matRipple
+        matRippleColor="#7040ff90">{{ nextLanguageBtnText | titlecase}}</button>
+
+        <div class="credits">
+            <p><a routerLink="#">Remerciements</a></p>
+        </div>
+        <div class="privacy-policy">
+            <p><a routerLink="#">Privacy Policy</a></p>
+        </div>
+    </div>
+
+</div>
+

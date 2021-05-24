@@ -1,0 +1,80 @@
+@import "../../assets/color_scheme.scss";
+@import "../../assets/ReneBiederMiliard/style.css";
+
+
+
+.container {
+  background-color: $secondary-color;
+  position: sticky;
+  top: 0;
+  padding: 0;
+  width: 100vw;
+
+  padding-bottom: max(0.7vh, 4px);
+  margin: 0px;
+  font-family: "Milliard Book", Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.navigation {
+  min-height: 30px;
+  display: flex;
+  justify-content: left;
+  background-color: $primary-color;
+  top: 0;
+  padding: 0;
+}
+
+.main-title {
+  flex: 2;
+  display: flex;
+  color: $light-font;
+  margin: 0;
+  margin-left: max(2em, 10px);
+  padding: 0;
+  flex-direction: row;
+  align-items: center;
+  font-size: clamp(12px, min(2em, 3vw), 24px);
+}
+
+.nav-links {
+  min-height: 35px;
+  height: max(6vh, 40px);
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: clamp(12px, min(2em, 3vw), 24px);
+
+  app-top-bar-link-card {
+    height: 100%;
+    flex:1;
+  }
+}
+
+.language-btn {
+  background-color: $primary-color;
+  color: $light-font;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 3em;
+  font-family: "Milliard Book";
+  font-size: clamp(10px, min(1em, 1.5vw), 20px);
+  margin-right: 2em;
+
+  &:hover {
+    background-color: $primary-color-light;
+    transition: background-color 0.2s;
+  }
+
+  &:active {
+    background-color: $primary-color-dark;
+    transition: background-color 0.125s;
+  }
+}

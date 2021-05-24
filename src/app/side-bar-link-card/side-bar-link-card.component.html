@@ -1,0 +1,6 @@
+<div [class]="getStyle()">
+    <li matRipple
+        matRippleColor="#39393e80">
+        <a (click)="toSection()" [routerLink]="card.cardLink">{{card.cardText}}</a>
+    </li>
+</div>

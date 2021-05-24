@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="navigation">
+        <h2 class="main-title">Victor Noon</h2>
+
+        <ul class="nav-links">
+            <app-top-bar-link-card *ngFor="let card of cards" [card]="card"></app-top-bar-link-card>
+            <!-- <li *ngFor="let card of cards"
+            [class]="card.cardStyle"><a [routerLink]="card.cardLink" (click)="onChangePage()">{{card.cardText}}</a><li> -->
+        </ul>
+        <button class="language-btn"
+                (click)="onChangeLanguage()"
+                matRipple
+                matRippleColor="#7040ff90">{{ nextLanguageBtnText | titlecase}}</button>
+    </div>
+</div>

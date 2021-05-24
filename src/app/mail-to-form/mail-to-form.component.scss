@@ -1,0 +1,125 @@
+@import "../../assets/color_scheme.scss";
+@import "../../assets/ReneBiederMiliard/style.css";
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    margin: 3em;
+
+    font-family: "Milliard Light";
+
+}
+
+.mail-to {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    border-radius: 0.25em;
+    padding: 0em 2em 2em 2em;
+    width: 100%;
+    box-shadow: 5px 5px 15px rgb(107, 107, 107);
+}
+
+.mail-form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-fields-layout {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 0.5;
+    height: 12em;
+    margin: 0 ;
+    padding: 0 ;
+
+    input {
+        margin: 1em;
+        flex:1;
+        width: 100%;
+        font-family: "Milliard Light", "Times New Roman", Times, serif;
+    }
+}
+
+
+textarea {
+    resize: none;
+}
+
+.mail-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+
+    textarea {
+        font-family: "Milliard Light", "Times New Roman", Times, serif;
+        width: 90%;
+        height: 12em;
+    }
+}
+
+.submit-btn {
+
+    display: flex;
+    justify-content: center;
+    height: 3em;
+    width: 12em;
+    margin-top: 1.5em;
+
+
+    div {
+        display: flex;
+        flex: 1;
+        border-radius: 7px;
+
+        input {
+            color: $light-font;
+            font-size: 20px;
+            font-family: "Milliard Book", Arial, Helvetica, sans-serif;
+            flex: 1;
+            height: 100%;
+            background-color: $primary-color;
+            border: none;
+            border-radius: 7px;
+            box-shadow: 0.25em 0.25em 0.25em hsl(239, 24%, 38%);
+    
+            transition: background-color 0.25s;
+    
+            &:hover {
+                background-color: $primary-color-light;
+                transition: background-color 0.25s;
+                
+            }
+    
+            &:active {
+                background-color: $primary-color-dark;
+                box-shadow: 0 0 0 hsl(239, 24%, 38%);
+                transition: background-color 0.125s, box-shadow 0.125s;
+            }
+        }
+    }
+
+}
