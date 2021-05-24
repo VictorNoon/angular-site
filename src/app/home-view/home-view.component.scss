@@ -33,12 +33,7 @@
         img {
             border: 0;
             padding: 0;
-            @media screen {
-                height: 120vh;
-            }
-            @media screen and (max-width: 1200px) {
-                height: 120vh;
-            }
+            height: 120vh;
             width: 100vw;
             object-fit: cover;
 
@@ -74,24 +69,17 @@
         img {
             border: 0;
             padding: 0;
-            width: 120vw;
-            @media screen {
-              height: 810px;
-            }
-            @media screen and (max-width: 1200px) {
-              height: 985px;
-            }
-            
+            width: 120vw;            
             object-fit:cover;
             object-position: top;
-  
             filter: brightness(80%);
             position: absolute;
-            top: 95vh;
             z-index: -1;
+            margin-top: 0px;
         }
 
         .who-am-i {
+            padding-top: 3em;
             width: 90%;
             padding-left: 1em;
             display: flex;
@@ -154,9 +142,13 @@
             @media screen {
                 width: 100%;
               }
-              @media screen and (max-width: 800px) {
+            @media screen and (max-width: 800px) {
                 width: 100vw;
               }
+        }
+
+        .skills {
+            padding-bottom: 10px;
         }
     }
     
