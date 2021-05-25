@@ -11,6 +11,13 @@
 
 .home {
 
+    h3 {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-size: 3em;  
+    }
+
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -36,6 +43,7 @@
             height: 120vh;
             width: 100vw;
             object-fit: cover;
+            user-select: none;
 
             filter: brightness(60%);
             position: absolute;
@@ -78,6 +86,7 @@
             left:0;
             z-index: -1;
             margin-top: 0px;
+            user-select: none;
         }
 
         .who-am-i {
@@ -100,12 +109,6 @@
     
             .bio{
                 width: 400px;
-                h3 {
-                    margin: 0;
-                    padding: 0;
-                    text-align: left;
-                    font-size: 3em;  
-                }
             }
     
             .info-card {
@@ -134,13 +137,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
-            h3 {
-                margin: 0;
-                padding: 0;
-                text-align: left;
-                font-size: 3em;  
-            }
             @media screen {
                 width: 100%;
               }
@@ -150,6 +146,27 @@
         }
 
         .skills {
+            padding-top: 3em;
+            width: 90%;
+            padding-left: 1em;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .skill-section {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .skill-list-display {
+
+                    display: flex;
+                    align-items: right;
+                    justify-content: right;
+                    flex-direction: column;
+                }
+            }
+
             padding-bottom: 2em;
         }
 

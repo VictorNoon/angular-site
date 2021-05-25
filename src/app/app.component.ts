@@ -64,6 +64,7 @@ export class AppComponent implements OnInit {
     this.languageService.switchToNextLanguage();
   }
 
+  @HostListener('window:load')
   @HostListener('window:resize') CheckForSideBar() {
     if (window.innerWidth <= this.minWidthForMobile) { // 768px portrait
       this.mobile = true;

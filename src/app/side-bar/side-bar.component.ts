@@ -79,8 +79,7 @@ export class SideBarComponent implements OnInit {
   }
 
   onChangePage(){
-    console.log("link clicked");
-    console.log(window.location.href)
+
   }
 
   onChangeLanguage() : void {

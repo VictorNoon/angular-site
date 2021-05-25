@@ -43,6 +43,8 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { SideBarLinkCardComponent } from './side-bar-link-card/side-bar-link-card.component';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { TimeLineEntryComponent } from './time-line-entry/time-line-entry.component';
+import { SkillDisplayComponent } from './skill-display/skill-display.component';
+import { SkillDisplayCardComponent } from './skill-display-card/skill-display-card.component';
 
 const appRoutes : Routes = [
   { path: 'cv', component: CvViewComponent},
@@ -75,6 +77,8 @@ const appRoutes : Routes = [
     SideBarLinkCardComponent,
     TimeLineComponent,
     TimeLineEntryComponent,
+    SkillDisplayComponent,
+    SkillDisplayCardComponent,
   ],
   imports: [
     BrowserModule,

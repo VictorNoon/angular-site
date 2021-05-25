@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="title-container">
+        <h5>{{skillName}}</h5>
+    </div>
+    <div class="skill-bar">
+        <div *ngFor="let display of skillDisplay">
+            <p *ngIf="display" class="skill-bubble-on"></p>
+            <p *ngIf="!display" class="skill-bubble-off"></p>
+        </div>
+    </div>
+</div>
