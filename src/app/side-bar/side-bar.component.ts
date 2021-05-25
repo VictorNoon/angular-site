@@ -30,14 +30,18 @@ export class SideBarComponent implements OnInit {
   nextLanguageBtnText : string = "None";
 
   cardsText : string[][] = [["Accueil", "Home"],
+                            ["Qui suis-je ?", "About Me"],
+                            ["Mon parcours", "My Journey"],
+                            ["Mes compétences", "Skills"],
                             ["Mes créations", "Portfolio"],
-                            ["Mes compétences", "CV"],
                             ["Contacter", "Contact"]]
 
-  cards: LinkCard[] = [new LinkCard("selected-card", "/home", "Home", "home-top"),
-                      new LinkCard("card", "/home", "Portfolio", "who-am-i"),
-                      new LinkCard("card", "/home", "CV", ""),
-                      new LinkCard("card", "/home", "Contact", "")]
+  cards: LinkCard[] = [new LinkCard("card", "/home", "Home", "home-top"),
+                      new LinkCard("card", "/home", "About Me", "who-am-i"),
+                      new LinkCard("card", "/home", "My Journey", "time-line"),
+                      new LinkCard("card", "/home", "Skills", "skills"),
+                      new LinkCard("card", "/home", "Portfolio", "portfolio"),
+                      new LinkCard("card", "/home", "Contact", "contact")]
 
   constructor(private languageService: LanguageService) {
     this.languageServiceSubscription = languageService.languageServiceSubject.subscribe(

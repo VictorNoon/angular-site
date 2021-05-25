@@ -42,6 +42,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SideBarLinkCardComponent } from './side-bar-link-card/side-bar-link-card.component';
 import { TimeLineComponent } from './time-line/time-line.component';
+import { TimeLineEntryComponent } from './time-line-entry/time-line-entry.component';
 
 const appRoutes : Routes = [
   { path: 'cv', component: CvViewComponent},
@@ -73,6 +74,7 @@ const appRoutes : Routes = [
     SideBarComponent,
     SideBarLinkCardComponent,
     TimeLineComponent,
+    TimeLineEntryComponent,
   ],
   imports: [
     BrowserModule,

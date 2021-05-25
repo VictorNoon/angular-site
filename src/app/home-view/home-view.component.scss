@@ -40,6 +40,7 @@
             filter: brightness(60%);
             position: absolute;
             top: 0;
+            left: 0;
             z-index: -1;
         }
         .title-name{
@@ -69,11 +70,12 @@
         img {
             border: 0;
             padding: 0;
-            width: 120vw;            
+            width: 140vw;            
             object-fit:cover;
             object-position: top;
             filter: brightness(80%);
             position: absolute;
+            left:0;
             z-index: -1;
             margin-top: 0px;
         }
@@ -148,7 +150,15 @@
         }
 
         .skills {
-            padding-bottom: 10px;
+            padding-bottom: 2em;
+        }
+
+        .portfolio {
+            padding-bottom: 2em;
+        }
+
+        .contact {
+            padding-bottom: 2em;
         }
     }
     

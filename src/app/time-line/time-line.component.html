@@ -1,55 +1,8 @@
 <div class="container">
   <div class="line">
-    <div class="dot-left">
-      <p>Date</p>
-      <mat-card class="card">
-        <mat-card-header>
-          <mat-card-title>Title Entry</mat-card-title>
-        </mat-card-header>
-
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-            with mountainous terrain, the Shiba Inu was originally bred for
-            hunting.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-    <div class="dot-right">
-      <p>Date</p>
-      <mat-card class="card">
-        <mat-card-header>
-          <mat-card-title>Title Entry</mat-card-title>
-        </mat-card-header>
-
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-            with mountainous terrain, the Shiba Inu was originally bred for
-            hunting.
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </div>
-    <div class="dot-left">
-      <p>Date</p>
-      <mat-card class="card">
-        <mat-card-header>
-          <mat-card-title>Title Entry</mat-card-title>
-        </mat-card-header>
-
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-            with mountainous terrain, the Shiba Inu was originally bred for
-            hunting.
-          </p>
-        </mat-card-content>
-      </mat-card>
+    <div *ngFor="let entry of entries;let isOdd = odd">
+      <app-time-line-entry *ngIf="isOdd" [entry]="entry" displayStyle="dotRight" ></app-time-line-entry>
+      <app-time-line-entry *ngIf="!isOdd" [entry]="entry" displayStyle="dotLeft" ></app-time-line-entry>
     </div>
   </div>
 </div>
