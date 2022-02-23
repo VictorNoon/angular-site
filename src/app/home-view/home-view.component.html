@@ -9,25 +9,145 @@
           <h1>Développeur</h1>
         </div>
       </div>
+	  <div class="spacer"></div>
       <div class="body" id="body">
         <img
           src="./assets/images/svg/background card.svg"
           id="body-background-image"
         />
-        <div class="who-am-i" id="who-am-i">
-          <div class="bio">
+        <div class="who-am-i">
+          <div class="bio" id="who-am-i">
             <h3>Qui suis-je ?</h3>
+			<app-multy-language-text frTxt="Je suis un étudiant développeur généraliste réalisant sa dernière année à l'école 42. Actuellement à la recherche du stage qui mettra un point final à ses études et ses premiers pas en tant que développeur à part entière dans le monde du travail. Je suis également franco-brittanique et bilingue."
+			enTxt="I am a Student at school 42 in Paris. Currently on my final year, I am looking for an Internship in order to graduate and take my first formal step as a developper. I am both a French and UK citizen and fluent in both languages."></app-multy-language-text>
+          </div>
+        </div>
+        <div class="time-line" id="time-line">
+          <h3>Mon parcours</h3>
+          <app-time-line></app-time-line>
+        </div>
+
+        <div class="skills" id="skills">
+          <h3>Mes compétences</h3>
+          <div class="skill-section-organiser">
+            <div class="skill-section">
+              <h4>Languages</h4>
+              <div class="skill-list-display">
+                <app-skill-display
+                  skillName="C"
+                  skillLevel="4"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="C++"
+                  skillLevel="4"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="C#"
+                  skillLevel="5"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="JS/TS"
+                  skillLevel="3"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="Python"
+                  skillLevel="3"
+                ></app-skill-display>
+              </div>
+            </div>
+            <div class="skill-section">
+              <h4>Outils</h4>
+              <div class="skill-list-display">
+                <app-skill-display
+                  skillName="Unity"
+                  skillLevel="4"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="Angular"
+                  skillLevel="3"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="NodeJS"
+                  skillLevel="2"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName=".NET"
+                  skillLevel="2"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="GIT"
+                  skillLevel="4"
+                ></app-skill-display>
+              </div>
+            </div>
+            <div class="skill-section">
+              <h4>Langues</h4>
+              <div class="skill-list-display">
+                <app-skill-display
+                  skillName="Francais"
+                  skillLevel="6"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="Anglais"
+                  skillLevel="6"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="Espagnol"
+                  skillLevel="2"
+                ></app-skill-display>
+                <app-skill-display
+                  skillName="Japonais"
+                  skillLevel="1"
+                ></app-skill-display>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio" id="portfolio">
+          <h3>Mes réalisations</h3>
+          <div class="portfolio-entry">
+            <h4>Gory Bugs</h4>
             <p>
-              Je suis un développeur full stack, connaisseur en tout maitre en
-              rien et avide d'apprendre et de résoudres des défis. Lorem ipsum
-              et dolor...
+              Recréation du classique jeu Flappy Birds, mais avec une ambiance
+              halloween, doté d'un system de skin, de score et d'une intégration
+              publicitaire. Ce petit projet perso avait pour but de se
+              familiariser sur un cycle complet de developpement de jeu. Ceci
+              allant du développement à l'habillage graphique et sonore afin de
+              créer un design cohérent en usant d'asset Creative Common. Les
+              aspects de droit à la propriété intellectuelle, ayant été un point
+              centrale de cet aspect de la démarche. Les notions de monétisation
+              ont aussi été explorer via l'ajout de publicité offrant récompense
+              afin de créer un jeu où la nécessité de regarder des publicités
+              est absente pour tout débloquer mais ou accepter d'en regarder
+              permet d'avancer plus vite. Enfin le portage sur mobile et la mise
+              en ligne sur un store a été effectuée afin d'avoir une experience
+              la plus total d'un cycle de développement.
+            </p>
+            <div class="simmer-io-elem">
+              <iframe
+                src="https://i.simmer.io/@ArmoredPangolin/gory-bugs"
+              ></iframe>
+            </div>
+          </div>
+          <div class="portfolio-entry">
+            <h4>Site CV</h4>
+            <p>
+              Le site ici-présent, qui m'a permis d'apprendre les fondamentaux d'Angular NodeJS et
+              JavaScript/TypeScript. Ce site m'a aussi permis d'apprendre et de
+              me sensibiliser à bien des choses en terme de communication et
+              design visuelle, par exemple la lisibilité du style graphique au
+              personnes malvoyantes, ou l'adaptabilité du site au différents
+              supports (ordinateur, tablette, téléphone...). J'ai aussi obtenue
+              des connaissances solides en terme de single page application,
+              comment faire un routing, et les autres aspects fondamentaux du
+              développement Front-end.
             </p>
           </div>
+        </div>
+
+        <div class="contact" id="contact">
+          <h3>Contactez-moi</h3>
           <div class="infos" id="infos">
-            <div class="info-card">
-              <h4>Pays</h4>
-              <p>France</p>
-            </div>
             <div class="info-card">
               <h4>Mail</h4>
               <p>victor.lawrence.noon@gmail.com</p>
@@ -37,121 +157,6 @@
               <p>+33 7 68 45 59 35</p>
             </div>
           </div>
-        </div>
-
-        <div class="time-line" id="time-line">
-          <h3>Mon parcours</h3>
-          <app-time-line></app-time-line>
-        </div>
-
-        <div class="skills" id="skills">
-          <h3>Mes compétences</h3>
-          <div class="skill-section">
-            <h4>Languages</h4>
-            <div class="skill-list-display">
-              <app-skill-display
-                skillName="C"
-                skillLevel="4"
-              ></app-skill-display>
-              <app-skill-display
-                skillName="C++"
-                skillLevel="4"
-              ></app-skill-display>
-              <app-skill-display
-                skillName="C#"
-                skillLevel="5"
-              ></app-skill-display>
-              <app-skill-display
-                skillName="JS/TS"
-                skillLevel="3"
-              ></app-skill-display>
-              <app-skill-display
-                skillName="Python"
-                skillLevel="3"
-              ></app-skill-display>
-            </div>
-          </div>
-          <div class="skill-section">
-            <h4>Outils</h4>
-            <div class="skill-list-display">
-              <app-skill-display
-                skillName="Unity"
-                skillLevel="4"
-              ></app-skill-display>
-              <app-skill-display
-                skillName="Angular"
-                skillLevel="3"
-              ></app-skill-display>
-              <app-skill-display
-                skillName="NodeJS"
-                skillLevel="3"
-              ></app-skill-display>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio" id="portfolio">
-          <p>To do: portfolio</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            pretium egestas tempus. Etiam et massa et augue pharetra vestibulum
-            at nec tortor. Fusce faucibus, velit quis elementum tincidunt, sem
-            orci laoreet libero, et bibendum nibh ante ultrices nulla. In eget
-            magna lorem. Aliquam lectus libero, posuere sit amet feugiat non,
-            porta sodales urna. Curabitur a laoreet metus, commodo semper
-            ligula. Aliquam nec lorem eu dui mattis porta. Duis sed risus
-            accumsan, laoreet nunc sit amet, dictum arcu. Nulla velit velit,
-            iaculis vel urna vitae, tempor posuere urna. Nam convallis diam a
-            mollis imperdiet. Phasellus scelerisque diam in commodo malesuada.
-            Vestibulum vitae sem in nisi dictum consequat non ac dui. Sed a dui
-            rhoncus, placerat massa nec, sagittis quam. Nulla eu scelerisque mi.
-          </p>
-          <p>
-            Donec non hendrerit diam. In ornare sapien vitae ex accumsan
-            dignissim. Nam molestie hendrerit velit, a lobortis magna pretium
-            id. Vestibulum gravida, dui vitae auctor sollicitudin, urna sem
-            dictum massa, eu dignissim orci dolor non enim. Vestibulum dictum
-            ornare urna vel luctus. Integer at pretium arcu. Donec elementum ex
-            quis erat luctus, eget semper lorem condimentum. Maecenas et velit
-            lacinia, malesuada metus nec, consequat ante. Suspendisse viverra
-            sollicitudin ipsum, at ultricies nulla egestas ac. Nullam vel luctus
-            neque. Etiam tempor nisl quis nisl tincidunt, id scelerisque nisi
-            iaculis. Etiam et metus bibendum, consequat massa eu, consectetur
-            orci. Suspendisse id tellus nec felis mattis posuere. Morbi nec
-            dolor in enim ullamcorper aliquet. Donec tincidunt tortor et mauris
-            vestibulum, sit amet viverra lacus finibus.
-          </p>
-        </div>
-        <div class="contact" id="contact">
-          <p>To do: contact</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            pretium egestas tempus. Etiam et massa et augue pharetra vestibulum
-            at nec tortor. Fusce faucibus, velit quis elementum tincidunt, sem
-            orci laoreet libero, et bibendum nibh ante ultrices nulla. In eget
-            magna lorem. Aliquam lectus libero, posuere sit amet feugiat non,
-            porta sodales urna. Curabitur a laoreet metus, commodo semper
-            ligula. Aliquam nec lorem eu dui mattis porta. Duis sed risus
-            accumsan, laoreet nunc sit amet, dictum arcu. Nulla velit velit,
-            iaculis vel urna vitae, tempor posuere urna. Nam convallis diam a
-            mollis imperdiet. Phasellus scelerisque diam in commodo malesuada.
-            Vestibulum vitae sem in nisi dictum consequat non ac dui. Sed a dui
-            rhoncus, placerat massa nec, sagittis quam. Nulla eu scelerisque mi.
-          </p>
-          <p>
-            Donec non hendrerit diam. In ornare sapien vitae ex accumsan
-            dignissim. Nam molestie hendrerit velit, a lobortis magna pretium
-            id. Vestibulum gravida, dui vitae auctor sollicitudin, urna sem
-            dictum massa, eu dignissim orci dolor non enim. Vestibulum dictum
-            ornare urna vel luctus. Integer at pretium arcu. Donec elementum ex
-            quis erat luctus, eget semper lorem condimentum. Maecenas et velit
-            lacinia, malesuada metus nec, consequat ante. Suspendisse viverra
-            sollicitudin ipsum, at ultricies nulla egestas ac. Nullam vel luctus
-            neque. Etiam tempor nisl quis nisl tincidunt, id scelerisque nisi
-            iaculis. Etiam et metus bibendum, consequat massa eu, consectetur
-            orci. Suspendisse id tellus nec felis mattis posuere. Morbi nec
-            dolor in enim ullamcorper aliquet. Donec tincidunt tortor et mauris
-            vestibulum, sit amet viverra lacus finibus.
-          </p>
         </div>
       </div>
     </div>

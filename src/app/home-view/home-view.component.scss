@@ -2,181 +2,217 @@
 @import "../../assets/ReneBiederMiliard/style.css";
 
 .container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .home {
+  h3 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 3em;
+  }
 
-    h3 {
-        margin: 0;
-        padding: 0;
-        text-align: left;
-        font-size: 3em;  
-    }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  min-height: 100vh;
+  text-align: justify;
+  padding: 0;
+  border: 0;
 
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 85%;
-    min-height: 100vh;
-    text-align: justify;
+  color: $light-font;
+
+  .top {
+    flex: 1 1 0;
     padding: 0;
     border: 0;
+    width: 80vw;
+    height: 100vh;
+    img {
+      border: 0;
+      padding: 0;
+      height: 120vh;
+      width: 100vw;
+      object-fit: cover;
+      user-select: none;
 
-    color: $light-font;
+      filter: brightness(60%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .title-name {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 80vh;
+      right: 20px;
+      margin: 0;
 
-    .top {
-        flex: 1 1 0;
+      h1 {
+        margin: 0;
         padding: 0;
-        border: 0;
-        width: 80vw;
-        height: 100vh;
-        img {
-            border: 0;
-            padding: 0;
-            height: 120vh;
-            width: 100vw;
-            object-fit: cover;
-            user-select: none;
+        text-align: right;
+        font-size: 3em;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+        text-align: right;
+        font-size: 2em;
+      }
+    }
+  }
 
-            filter: brightness(60%);
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        .title-name{
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            top: 80vh;
-            right: 20px;
-            margin: 0;
-
-            h1 {
-                margin: 0;
-                padding: 0;
-                text-align: right;
-                font-size: 3em;          
-            }
-            h2 {
-                margin: 0;
-                padding: 0;
-                text-align: right;
-                font-size: 2em;
-            }
-        }
+  .body {
+    img {
+      border: 0;
+      padding: 0;
+      width: 140vw;
+      object-fit: cover;
+      object-position: top;
+      filter: brightness(80%);
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      margin-top: 0px;
+      user-select: none;
     }
 
-    .body {            
-        img {
-            border: 0;
-            padding: 0;
-            width: 140vw;            
-            object-fit:cover;
-            object-position: top;
-            filter: brightness(80%);
-            position: absolute;
-            left:0;
-            z-index: -1;
-            margin-top: 0px;
-            user-select: none;
-        }
+    .who-am-i {
+      padding-top: 6em;
+      width: 90%;
+      padding-left: 1em;
+      display: flex;
+      align-items: center;
+      @media screen {
+        flex-direction: row;
+      }
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+      }
 
-        .who-am-i {
-            padding-top: 3em;
-            width: 90%;
-            padding-left: 1em;
-            display: flex;
-            align-items: center; 
-            @media screen {
-                  flex-direction: row;
-            }
-            @media screen and (max-width: 1200px) {
-                flex-direction: column;
-            }
-            
-            justify-content: space-evenly;
-            padding-left: 20px;
-            padding-right: 20px;
+      justify-content: space-evenly;
+      padding-left: 20px;
+      padding-right: 20px;
 
-    
-            .bio{
-                width: 400px;
-            }
-    
-            .info-card {
-                display: flex;
-                align-items: center;
-                justify-content: left;
-    
-                h4 {
-                    color: $secondary-color;
-                    width: 125px;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-family: "Milliard Light";
-                }
-                p {
-                    color: $light-font;
-                    width: 250px;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-family: "Milliard Light";            
-                }
-            }
-        }
-        .time-line {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            @media screen {
-                width: 100%;
-              }
-            @media screen and (max-width: 800px) {
-                width: 100vw;
-              }
-        }
-
-        .skills {
-            padding-top: 3em;
-            width: 90%;
-            padding-left: 1em;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-
-            .skill-section {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-
-                .skill-list-display {
-
-                    display: flex;
-                    align-items: right;
-                    justify-content: right;
-                    flex-direction: column;
-                }
-            }
-
-            padding-bottom: 2em;
-        }
-
-        .portfolio {
-            padding-bottom: 2em;
-        }
-
-        .contact {
-            padding-bottom: 2em;
-        }
+      .bio {
+        padding-top: 1em;
+        width: 100%;
+      }
     }
-    
+    .time-line {
+      padding-top: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media screen {
+        width: 100%;
+      }
+      @media screen and (max-width: 800px) {
+        width: 100vw;
+      }
+    }
+
+    .skills {
+      padding-top: 1em;
+      width: 100%;
+      padding-left: 1em;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-bottom: 2em;
+      .skill-section-organiser {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        .skill-section {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding: 2em;
+
+          .skill-list-display {
+            display: flex;
+            align-items: right;
+            justify-content: right;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    .portfolio {
+		padding-top: 1em;
+      padding-bottom: 2em;
+      width: 90%;
+      padding-left: 1em;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .portfolio-entry {
+        width: 100%;
+        h4 {
+          color: $secondary-color;
+          font-size: 30px;
+          font-style: normal;
+          font-family: "Milliard Light";
+        }
+        .simmer-io-elem {
+          display: flex;
+          width: 100%;
+          iframe {
+            width: 100%;
+            height: 80vh;
+            border: 0;
+          }
+        }
+      }
+    }
+
+    .contact {
+      padding-bottom: 2em;
+      width: 90%;
+      padding-left: 1em;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .info-card {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        h4 {
+          color: $secondary-color;
+          width: 125px;
+          font-size: 20px;
+          font-style: normal;
+          font-family: "Milliard Light";
+        }
+        p {
+          color: $light-font;
+          width: 250px;
+          font-size: 20px;
+          font-style: normal;
+          font-family: "Milliard Light";
+        }
+      }
+    }
+  }
 }

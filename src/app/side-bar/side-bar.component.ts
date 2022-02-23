@@ -31,10 +31,10 @@ export class SideBarComponent implements OnInit {
 
   cardsText : string[][] = [["Accueil", "Home"],
                             ["Qui suis-je ?", "About Me"],
-                            ["Mon parcours", "My Journey"],
-                            ["Mes compétences", "Skills"],
-                            ["Mes créations", "Portfolio"],
-                            ["Contacter", "Contact"]]
+                            ["Parcours", "My Journey"],
+                            ["Compétences", "Skills"],
+                            ["Créations", "Portfolio"],
+                            ["Me Contacter", "Contact"]]
 
   cards: LinkCard[] = [new LinkCard("card", "/home", "Home", "home-top"),
                       new LinkCard("card", "/home", "About Me", "who-am-i"),
@@ -75,7 +75,7 @@ export class SideBarComponent implements OnInit {
     this.cards.forEach(card => {
       card.cardText = this.cardsText[index][languageSelector];
       index++;
-    }); 
+    });
   }
 
   onChangePage(){

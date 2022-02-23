@@ -29,7 +29,7 @@ import { CvViewComponent } from './cv-view/cv-view.component';
 import { PortfolioViewComponent } from './portfolio-view/portfolio-view.component';
 import { TopBarLinkCardComponent } from './top-bar-link-card/top-bar-link-card.component';
 import { ConsentSnackBarComponent } from './consent-snack-bar/consent-snack-bar.component';
-
+import { MultyLanguageTextComponent} from './multy-language-text/multy-language-text.component';
 
 //Services Imports
 import { LanguageService } from './services/language.service';
@@ -45,6 +45,7 @@ import { TimeLineComponent } from './time-line/time-line.component';
 import { TimeLineEntryComponent } from './time-line-entry/time-line-entry.component';
 import { SkillDisplayComponent } from './skill-display/skill-display.component';
 import { SkillDisplayCardComponent } from './skill-display-card/skill-display-card.component';
+
 
 const appRoutes : Routes = [
   { path: 'cv', component: CvViewComponent},
@@ -79,6 +80,7 @@ const appRoutes : Routes = [
     TimeLineEntryComponent,
     SkillDisplayComponent,
     SkillDisplayCardComponent,
+    MultyLanguageTextComponent,
   ],
   imports: [
     BrowserModule,

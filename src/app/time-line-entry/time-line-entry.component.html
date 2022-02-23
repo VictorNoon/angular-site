@@ -1,14 +1,14 @@
 <div [class]="displayStyle">
   <div *ngIf="hasDate">
-    <p>{{ entry.date }}</p>
+    <p class="date">{{ entry.date }}</p>
   </div>
   <div *ngIf="!hasDate" class="spacing"><p>hey</p></div>
   <mat-card class="card">
     <mat-card-header>
-      <mat-card-title>{{ entry.title }}</mat-card-title>
+      <mat-card-title class="title">{{ entry.title }}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-      <p>
+      <p class="details">
         {{ entry.content }}
       </p>
     </mat-card-content>
