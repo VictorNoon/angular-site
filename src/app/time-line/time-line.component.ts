@@ -28,26 +28,28 @@ export class TimeLineComponent implements OnInit {
 
   frEntries: TimeLineEntryData[] = [
     new TimeLineEntryData(
-      'DUT - GEII (Génie Electrique et Informatique Industrielle)',
+      'DUT - GEII (Génie Électrique et Informatique Industrielle)',
       '2012 - 2014',
-      'Formation en électricité électronique et informatique industriel. \nDiplome obtenu.\nContenu de la formation:\n' +
-        'Créations de cartes électroniques, électrotechnique, programmation sur automate industriel,' +
-        ' programmation sur microcontrôleur, programmation en C, C++, Verilog.'
+      'Formation en électricité électronique et informatique industriel. \n\nDiplôme obtenu.\n\nContenu de la formation:\n' +
+        'Création de cartes électroniques\nÉlectrotechnique\nProgrammation sur automates industriels\n' +
+        'Programmation sur microcontrôleur\nApprentissage des languages: C, C++, Verilog.\n\n' +
+		'Stage de fin de DUT: Création de systems de supervision de station de traitement des eaux.'
     ),
     new TimeLineEntryData(
       'Ecole 42',
       '2015 - 2018',
-      'Formation généraliste en Informatique.\n' +
+      'Formation généraliste en informatique.\n\n' +
         'Contenu de la formation:\n' +
-        'Apprentissage des languages: C, C++, C#, HTML, CSS, Python' +
-        'Apprentissage des outils: Git, Unity' +
-        'Problématiques des projets: création de VM, IA, Securité, Game Design'
+        'Apprentissage des languages: C, C++, C#, HTML, CSS, Python\n' +
+        'Apprentissage des outils: Git, Unity\n' +
+        'Problématiques des projets: Création de VM, IA, Sécurité, Game Design\n\n' +
+		'Stage de mi-cursus: Réalisation d\'un logiciel de modélisation et d\'évaluation des risques de sécurité.'
     ),
     new TimeLineEntryData(
       'Magic Makers',
       '2019 - 2021',
-      "Enseignement de l'informatique aux enfants et adolescents.\n" +
-	  'Missions exercés:\n' +
+      "Enseignement de l'informatique aux enfants et adolescents.\n\n" +
+	  'Missions exercées:\n' +
 	  'Création de ressources pédagogiques en informatique (Python, HTML/CSS, C#, Unity)'+
 	  ' sous forme de documents texte ou site.\n' +
 	  'Gestion des relations partenaire, gestions du matériel, relation avec les clients.'
@@ -55,11 +57,11 @@ export class TimeLineComponent implements OnInit {
     new TimeLineEntryData(
       'Ecole 42',
       '2021',
-      'Formation généraliste en Informatique.\nDernière année de formation.' +
+      'Formation généraliste en Informatique. Dernière année de formation.\n\n' +
         'Spécialisation sur:\n' +
-        'Les languages: C, C++, C#' +
-        'Les outils: Git, Unity' +
-        'Problématiques des projets: IA, Game Design'
+        'Les languages: C, C++, C#\n' +
+        'Les outils: Git, Unity\n' +
+        'Les domaines: IA, Game Design'
     ),
   ];
 
@@ -67,36 +69,37 @@ export class TimeLineComponent implements OnInit {
     new TimeLineEntryData(
       'DUT - GEII',
       '2012 - 2014',
-      'Formation en électricité électronique et informatique industriel. \nDiplome obtenu.\nContenu de la formation:\n' +
-        'Créations de cartes électroniques, électrotechnique, programmation sur automate industriel,' +
-        ' programmation sur microcontrôleur, programmation en C, C++, Verilog.'
+      'Training in electronic electricity and industrial computing. \nDegree obtained.\n\nTraining content:\n' +
+        'Creation of electronic cards\nElectrical engineering\nProgramming on industrial automatons\n' +
+        'Microcontroller programming\nComputer languages: C, C++, Verilog.\n\n' +
+		'Final internship: Development of supervision software for water plant.'
     ),
     new TimeLineEntryData(
-      'Ecole 42',
+      'School 42 - Paris',
       '2015 - 2018',
-      'Formation généraliste en Informatique.\n' +
-        'Contenu de la formation:\n' +
-        'Apprentissage des languages: C, C++, C#, HTML, CSS, Python' +
-        'Apprentissage des outils: Git, Unity' +
-        'Problématiques des projets: création de VM, IA, Securité, Game Design'
+      'General IT training.\n\n' +
+        'Training content:\n' +
+        'Computer languages: C, C++, C#, HTML, CSS, Python, JAVA\n' +
+        'Tools: Git, Unity\n' +
+        'Fields studied: creation of virtual machines, IA, Security, Game Design, OOD, TDD'
     ),
     new TimeLineEntryData(
       'Magic Makers',
       '2019 - 2021',
-      "Enseignement de l'informatique aux enfants et adolescents.\n" +
-	  'Missions exercés:\n' +
-	  'Création de ressources pédagogiques en informatique (Python, HTML/CSS, C#, Unity)'+
-	  ' sous forme de documents texte ou site.\n' +
-	  'Gestion des relations partenaire, gestions du matériel, relation avec les clients.'
+      "Teaching computer science to children and teenagers.\n\n" +
+	  'Tasks:\n' +
+	  'Creation of educational resources in computer science (Python, HTML/CSS, C#, Unity)'+
+	  ' in the form of text documents or sites.\n' +
+	  'Partner relationship management, equipment management, customer relationship.'
     ),
     new TimeLineEntryData(
       'Ecole 42',
       '2021',
-      'Formation généraliste en Informatique.\nDernière année de formation.' +
-        'Spécialisation sur:\n' +
-        'Les languages: C, C++, C#' +
-        'Les outils: Git, Unity' +
-        'Problématiques des projets: IA, Game Design'
+      'General IT training - Last year of training.\n\n' +
+        'Specialization in:\n' +
+        'Languages: C, C++, C#\n' +
+        'Tools: Git, Unity\n' +
+        'Fields of study: IA, Game Design'
     ),
   ];
 

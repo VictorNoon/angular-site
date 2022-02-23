@@ -45,6 +45,7 @@ import { TimeLineComponent } from './time-line/time-line.component';
 import { TimeLineEntryComponent } from './time-line-entry/time-line-entry.component';
 import { SkillDisplayComponent } from './skill-display/skill-display.component';
 import { SkillDisplayCardComponent } from './skill-display-card/skill-display-card.component';
+import { MultyLanguageTitleComponent } from './multy-language-title/multy-language-title.component';
 
 
 const appRoutes : Routes = [
@@ -81,6 +82,7 @@ const appRoutes : Routes = [
     SkillDisplayComponent,
     SkillDisplayCardComponent,
     MultyLanguageTextComponent,
+    MultyLanguageTitleComponent,
   ],
   imports: [
     BrowserModule,

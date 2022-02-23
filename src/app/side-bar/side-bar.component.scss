@@ -93,12 +93,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  
+
     background-color: $primary-color-dark;
     color: $light-font;
     font-size: 13px;
     font-family: "Milliard ExtraLight", Arial, Helvetica, sans-serif;
-  
+
     .credits {
       flex: 1 1 0;
       display: flex;
@@ -110,7 +110,7 @@
       p {
         padding: 0;
         margin: 0;
-  
+
         a {
           text-decoration: none;
           color: $light-font;
@@ -123,17 +123,17 @@
         }
       }
     }
-  
+
     .social {
       max-height: 8vh;
       padding: 0px;
       margin: 0px;
-  
+
       padding-top: clamp(2px, 0.5em, 10px);
       padding-bottom: clamp(2px, 0.5em, 10px);
       height: 100%;
       flex: 1 1 0;
-  
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -146,7 +146,7 @@
         margin: 0px;
         margin-left: 10px;
         margin-right: 10px;
-  
+
         .icon {
           height: 20px;
           transition-duration: 0.5s;
@@ -157,7 +157,7 @@
         }
       }
     }
-  
+
     .privacy-policy {
       padding: 0;
       margin: 0;
@@ -169,7 +169,7 @@
       p {
         padding: 0;
         margin: 0;
-  
+
         a {
           border-radius: 2px;
           text-decoration: none;
