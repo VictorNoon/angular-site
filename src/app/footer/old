@@ -1,0 +1,109 @@
+/*
+@import "../../assets/color_scheme.scss";
+@import "../../assets/ReneBiederMiliard/style.css";
+
+.container {
+  width: 100vw;
+  min-height: clamp(50px, 6vh, 100);
+  max-height: 6vh;
+  background-color: grey;
+}
+
+
+.footer-display {
+	width: 100vw;
+	min-height: clamp(50px, 6vh, 6vh);
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $primary-color-dark;
+	color: $light-font;
+	font-size: clamp(10px, 1em, 24px);
+	font-family: "Milliard Book", Arial, Helvetica, sans-serif;
+
+	.credits {
+	  flex: 1 1 0;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-start;
+	  align-items: center;
+	  padding: 0;
+	  margin: 0;
+	  p {
+		padding: 0;
+		margin: 0;
+
+		a {
+		  text-decoration: none;
+		  color: $light-font;
+		  border-radius: 2px;
+		  transition-duration: 0.5s;
+		  &:hover {
+			background-color: $primary-color-light;
+			transition-duration: 0.5s;
+		  }
+		}
+	  }
+	}
+
+	.social {
+	  max-height: 8vh;
+	  padding: 0px;
+	  margin: 0px;
+
+	  padding-top: clamp(2px, 0.5em, 10px);
+	  padding-bottom: clamp(2px, 0.5em, 10px);
+	  height: 100%;
+	  flex: 1 1 0;
+
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  a {
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 2px;
+		margin: 0px;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		.icon {
+		  height: clamp(24px, 2em, 32px);
+		  transition-duration: 0.5s;
+		}
+		&:hover {
+		  background-color: $primary-color-light;
+		  transition-duration: 0.5s;
+		}
+	  }
+	}
+
+	.privacy-policy {
+	  padding: 0;
+	  margin: 0;
+	  flex: 1 1 0;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-start;
+	  align-items: center;
+	  p {
+		padding: 0;
+		margin: 0;
+
+		a {
+		  border-radius: 2px;
+		  text-decoration: none;
+		  color: $light-font;
+		  transition-duration: 0.5s;
+		  &:hover {
+			background-color: $primary-color-light;
+			transition-duration: 0.5s;
+		  }
+		}
+	  }
+	}
+}
+*/
